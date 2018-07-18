@@ -1,21 +1,20 @@
-lz-string
+lz-string-unsafe
 =========
-LZ-based compression algorithm for JavaScript
+LZ-based (unsafe) compression algorithm for JavaScript
 
-## Warning (migrating from version 1.3.4 - nov 2014)
-Files have changed locations and name since a recent release. The new release file is in `libs/lz-string.min.js` (or in `libs/lz-string.js` if you don't care for the minified version)
+## Forked version
 
-Sorry about the mess in other repos. This will not happen again.
+This fork is copied directly from https://github.com/JobLeonard/lz-string/tree/array-lookup branch.
 
-## Note on server side
+We slapped a `-beta` on the last version and pushed it to npm.
 
-If you are using one of the ports of lz-string to decode on the server what was encoded in the browser, you might want to use version 1.3.7 as the version 1.3.8 introduced a slight change in the encoding. While the JS versions are completely cross-compatible, the PHP, Go, ... versions might not be as forgiving.
+Why? Because we needed to include this library in our Stylus extension and every library we use needs to have a proper source location with a release.
 
 ## Install via [npm](https://npmjs.org/)
 
 ```shell
-$ npm install -g lz-string
-$ lz-string input.js > output.txt
+$ npm install -g lz-string-unsafe
+$ lz-string-unsafe input.js > output.txt
 ```
 
 ## Home page

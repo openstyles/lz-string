@@ -1,42 +1,32 @@
 {
-  "name": "lz-string",
+  "name": "lz-string-unsafe",
   "version": "1.4.4",
   "license": "WTFPL",
-  "filename": "lz-string.js",
-  "description": "LZ-based compression algorithm",
+  "filename": "lz-string-unsafe.js",
+  "description": "LZ-based (unsafe) compression algorithm",
   "homepage": "http://pieroxy.net/blog/pages/lz-string/index.html",
   "keywords": [
     "lz",
     "compression",
     "string"
   ],
-  "main": "libs/lz-string.js",
+  "main": "lz-string-unsafe.js",
   "typings": "typings/lz-string.d.ts",
   "bin": {
-    "lz-string": "bin/bin.js"
+    "lz-string-unsafe": "bin/bin.js"
   },
   "scripts": {},
   "dependencies": {},
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "https://github.com/pieroxy/lz-string.git"
+    "url": "https://github.com/openstyles/lz-string-unsafe.git"
   },
   "bugs": {
-    "url": "https://github.com/pieroxy/lz-string/issues"
+    "url": "https://github.com/openstyles/lz-string-unsafe/issues"
   },
   "directories": {
     "test": "tests"
   },
-  "author": "pieroxy <pieroxy@pieroxy.net>",
-  "autoupdate": {
-     "source": "git",
-     "target": "git://github.com/pieroxy/lz-string.git",
-     "basePath": "libs/",
-     "files": [
-      "lz-string.js",
-      "lz-string.min.js",
-      "base64-string.js"
-     ]
-   }
+  "author": "pieroxy <pieroxy@pieroxy.net>"
 }

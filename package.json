@@ -1,6 +1,6 @@
 {
   "name": "lz-string-unsafe",
-  "version": "1.4.4",
+  "version": "1.4.4-beta",
   "license": "WTFPL",
   "filename": "lz-string-unsafe.js",
   "description": "LZ-based (unsafe) compression algorithm",

@@ -15,9 +15,13 @@
   "bin": {
     "lz-string-unsafe": "bin/bin.js"
   },
-  "scripts": {},
+  "scripts": {
+    "minify": "uglifyjs --compress --mangle -o lz-string-unsafe.min.js -- lz-string-unsafe.js"
+  },
   "dependencies": {},
-  "devDependencies": {},
+  "devDependencies": {
+    "uglify-es": "^3.3.9"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/openstyles/lz-string-unsafe.git"
